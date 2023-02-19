@@ -166,6 +166,7 @@ body {
 .heading__fourty {
   color: var(--color-white);
   font-size: var(--font-size-sm);
+  cursor: pointer;
 }
 
 .para {
@@ -312,6 +313,11 @@ body {
   &__desc-box {
     & h4 {
       margin-bottom: var(--ws-sm);
+      @extend %transition;
+
+      &:hover {
+        color: var(--color-orange);
+      }
     }
   }
 
@@ -363,6 +369,10 @@ body {
       @extend %flexColumn;
       gap: var(--ws-xsm);
     }
+  }
+
+  & h4:hover {
+    color: var(--color-red);
   }
 
   &__img {
