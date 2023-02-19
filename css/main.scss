@@ -209,7 +209,8 @@ body {
   padding: 4.8rem 0;
 
   @include respond(tab-land) {
-    padding: var(--ws-lg) var(--ws-md);
+    padding: var(--ws-md);
+    padding-bottom: 4.8rem;
   }
 }
 
@@ -473,6 +474,8 @@ body {
 
 .btn--close {
   background-color: transparent;
+  position: fixed;
+  right: 2.4rem;
 
   &::before {
     top: 0;

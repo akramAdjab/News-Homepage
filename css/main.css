@@ -185,7 +185,8 @@ body {
 
 @media screen and (max-width: 62.5em) {
   .container {
-    padding: var(--ws-lg) var(--ws-md);
+    padding: var(--ws-md);
+    padding-bottom: 4.8rem;
   }
 }
 
@@ -472,6 +473,8 @@ body {
 
 .btn--close {
   background-color: transparent;
+  position: fixed;
+  right: 2.4rem;
 }
 
 .btn--close::before {
